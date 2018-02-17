@@ -21,7 +21,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell",
     path: "provision_setup.sh"
 
-  # Build the QGIS image
+  # Run every time the VM starts
   config.vm.provision "shell",
     path: "provision_job.sh",
     args: ENV['SHELL_ARGS'],
