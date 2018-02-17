@@ -12,7 +12,7 @@ The following steps assume you are running Ubuntu 16.04 host.
 
 1. Install Vagrant from: https://releases.hashicorp.com/vagrant/2.0.2/vagrant_2.0.2_x86_64.deb
 2. install vagrant plugin: `vagrant plugin install vagrant-disksize`
-3. clone this repo `git clone REPO`
+3. clone this repo `git clone https://github.com/elpaso/qgis-dev-vagrant.git`
 4. cd in the repo directory
 5. `vagrant up`
 6. login into the machine with `vagrant ssh`
