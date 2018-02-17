@@ -56,7 +56,7 @@ popd
 
 # Clean
 apt-get autoremove -y
-apt clean
+apt-get clean
 
 # Git clone QGIS
 cd /home/vagrant

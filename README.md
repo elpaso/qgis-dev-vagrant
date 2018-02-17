@@ -29,6 +29,7 @@ After launching the machine with `vagrant up`, you can login with user `vagrant`
 3. configure project
 4. under "Projects->Build" add a custom process step `make` and type `-j4` in arguments field
 5. remove the default build step (qmake)
+6. unset `LD_LIBRARY_PATH` in build environment
 6. click on the hammer icon to start your build! (and go watch a movie)
 
 ![Custom process step](custom-build-step.png)
@@ -38,10 +39,4 @@ Tweaking
 
 The `Vagrantfile` contains some configuration options for VirtualBox VM: you
 can customize the disk size, the number of CPUs and the amount of RAM.
-
-Troubleshooting
----------------
-
-If you get a linker error make sure you unset `LD_LIBRARY_PATH` in build environment.
-
 
