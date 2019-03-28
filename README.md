@@ -3,7 +3,7 @@ Vagrant recipe for QGIS master build
 ====================================
 
 This recipe provides a Ubuntu 18.04 VM with everything you need to 
-build and run QGIS master with Qt (3D is not available).
+build and run QGIS master with Qt.
 
 Host setup
 ----------
