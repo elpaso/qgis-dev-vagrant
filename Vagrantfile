@@ -1,20 +1,19 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-BOX = "bionic-canonical-64"
-BOX_URL = "https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64-vagrant.box"
-
+BOX = "Kynda/kubuntu-bionic64"
 
 Vagrant.configure("2") do |config|
   config.vm.box = BOX
-  config.vm.box_url = BOX_URL
-  config.disksize.size = '20GB'
+  config.vm.box_version = "0.1.0"
 
   config.vm.provider "virtualbox" do |v|
     v.gui = true
     v.memory = 8192
     v.cpus = 3
     v.customize ["modifyvm", :id, "--vram", "128"]
+    v.customize ["modifyvm", :id, "--usb", "on"]
+    v.customize ["modifyvm", :id, "--usbehci", "off"]
   end
 
   # Install the required software

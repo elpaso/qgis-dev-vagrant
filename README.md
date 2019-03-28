@@ -10,13 +10,12 @@ Host setup
 
 The following steps assume you are running Ubuntu 16.04 host.
 
-1. Install Vagrant from: https://releases.hashicorp.com/vagrant/2.0.2/vagrant_2.0.2_x86_64.deb
-2. install vagrant plugin: `vagrant plugin install vagrant-disksize`
-3. clone this repo `git clone https://github.com/elpaso/qgis-dev-vagrant.git`
-4. cd in the repo directory
-5. `vagrant up`
-6. login into the machine with `vagrant ssh`
-7. install guest additions `sudo /vagrant/guest_additions.sh` (answer yes when asked)
+1. Install Vagrant from: https://releases.hashicorp.com/vagrant/2.0.2/vagrant_2.0.2_x86_64.deb (or any later version)
+2. Install vagrant plugin: `vagrant plugin install vagrant-vbguest`
+4. clone this repo `git clone https://github.com/elpaso/qgis-dev-vagrant.git`
+5. cd in the repo directory
+6. `vagrant up`
+7. login into the machine with `vagrant ssh`
 8. reboot `vagrant halt && vagrant up`
 
 Usage
@@ -38,5 +37,5 @@ Tweaking
 --------
 
 The `Vagrantfile` contains some configuration options for VirtualBox VM: you
-can customize the disk size, the number of CPUs and the amount of RAM.
+can customize the number of CPUs and the amount of RAM.
 

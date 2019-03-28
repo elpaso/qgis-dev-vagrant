@@ -10,12 +10,21 @@ export DEBIAN_FRONTEND=noninteractive
 
 sudo adduser vagrant sudo
 
+sed -i -e 's/"1"/"0"/g' /etc/apt/apt.conf.d/20auto-upgrades
+
+
+systemctl stop apt-daily.service
+systemctl kill --kill-who=all apt-daily.service
+
+killall apt || true
+killall apt-get || true
+
 apt-get -y update
 apt-get install -y software-properties-common
 
 # Install KDE
 
-apt-get install -y kubuntu-desktop
+#apt-get install -y kubuntu-desktop
 apt-get remove -y libreoffice-common
 
 
@@ -37,7 +46,6 @@ apt-get install -y git bison ca-certificates ccache cmake cmake-curses-gui dh-py
     python3-yaml qt3d-assimpsceneimport-plugin qt3d-defaultgeometryloader-plugin qt3d-gltfsceneio-plugin \
     qt3d-scene2d-plugin qt3d5-dev qt5-default qt5keychain-dev qtbase5-dev qtbase5-private-dev qtpositioning5-dev \
     qttools5-dev qttools5-dev-tools saga spawn-fcgi txt2tags xauth xfonts-100dpi xfonts-75dpi xfonts-base xfonts-scalable xvfb
-
 
 
 chmod -R a+w /usr/lib/x86_64-linux-gnu/qt5/plugins/designer/
