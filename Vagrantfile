@@ -1,11 +1,11 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-BOX = "Kynda/kubuntu-bionic64"
+BOX = "generic/ubuntu1804"
 
 Vagrant.configure("2") do |config|
   config.vm.box = BOX
-  config.vm.box_version = "0.1.0"
+  config.vm.box_version = "1.9.20"
 
   config.vm.provider "virtualbox" do |v|
     v.gui = true
