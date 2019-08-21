@@ -60,7 +60,7 @@ apt-get clean
 # Git (shallow) clone QGIS
 cd /home/vagrant
 git clone --depth=1 https://github.com/qgis/QGIS.git
-mkdir /home/vagrant/QGIS/build-QGIS-Desktop-Debug
+mkdir /home/vagrant/build-QGIS-Desktop-Debug
 chown -R vagrant.vagrant /home/vagrant/QGIS
 
 

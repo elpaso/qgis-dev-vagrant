@@ -2,7 +2,7 @@
 Vagrant recipe for QGIS master build
 ====================================
 
-This recipe provides a Ubuntu 18.04 VM with everything you need to 
+This recipe provides a Ubuntu 18.04 VM with everything you need to
 build and run QGIS master with Qt Creator.
 
 Host setup
@@ -30,7 +30,11 @@ After launching the machine with `vagrant up`, you can login with user `vagrant`
 4. apply changes
 5. click on the hammer icon to start your build! (and go watch a movie)
 
-![Custom process step](custom-build-step.png)
+![Launch QT Creator](launch-qt-creator.png)
+![Load QGIS project](load-project.png)
+![Choose Debug build](configure-project-1.png)
+![Configure QGIS project](configure-project-2.png)
+![Build QGIS](build.png)
 
 Tweaking
 --------
