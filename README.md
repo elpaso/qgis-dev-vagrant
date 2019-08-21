@@ -27,7 +27,7 @@ After launching the machine with `vagrant up`, you can login with user `vagrant`
 1. launch QtCreator from the main menu
 2. from file menu "Open file or project..." choose `/home/vagrant/QGIS/CMakeList.txt`
 3. configure project, choose "Debug" build type
-4. under "Projects->Build" add a custom process step `make` and type `-j4` in arguments field
+4. apply changes
 5. click on the hammer icon to start your build! (and go watch a movie)
 
 ![Custom process step](custom-build-step.png)
