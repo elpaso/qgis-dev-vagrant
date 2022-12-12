@@ -1,11 +1,11 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-BOX = "generic/ubuntu1804"
+BOX = "generic/ubuntu2204"
 
 Vagrant.configure("2") do |config|
   config.vm.box = BOX
-  config.vm.box_version = "1.9.20"
+  config.vm.box_version = "4.2.6"
 
   config.vm.provider "virtualbox" do |v|
     v.gui = true

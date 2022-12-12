@@ -2,13 +2,13 @@
 Vagrant recipe for QGIS master build
 ====================================
 
-This recipe provides a Ubuntu 18.04 VM with everything you need to
+This recipe provides a Ubuntu 22.04 VM with everything you need to
 build and run QGIS master with Qt Creator.
 
 Host setup
 ----------
 
-The following steps assume you are running Ubuntu 18.04 host but it should work on any host where Vagrant and VirtualBox can be installed.
+The following steps assume you are running Ubuntu 20.04 host but it should work on any host where Vagrant and VirtualBox can be installed.
 
 1. Install Vagrant from: https://www.vagrantup.com/docs/installation/
 2. Install Vagrant plugin: `vagrant plugin install vagrant-vbguest`
