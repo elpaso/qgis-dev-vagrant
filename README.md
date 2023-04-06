@@ -15,9 +15,11 @@ The following steps assume you are running Ubuntu 20.04 host but it should work 
 3. Install Vagrant plugin: `vagrant plugin install vagrant-disksize`
 4. clone this repo `git clone https://github.com/elpaso/qgis-dev-vagrant.git`
 5. cd in the repo directory
-6. `vagrant up`
+6. `vagrant up` the first time that this step is executed it will take a very long time to download and install all software, check the machine logs
+to see when the process is finished before moving to the next.
 7. login into the machine with `vagrant ssh`
 8. reboot `vagrant halt && vagrant up`
+
 
 Usage
 -----
